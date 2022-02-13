@@ -11,7 +11,7 @@ function Header({ onShowCart }) {
 				<h1>ReactMeals</h1>
 				<HeaderCartButton onClick={onShowCart} />
 			</header>
-			<div className='main-image'>
+			<div className='MainImage'>
 				<img
 					src={mealsImage}
 					alt='A table full of delicious food!'
