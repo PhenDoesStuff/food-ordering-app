@@ -4,12 +4,12 @@ import mealsImage from '../../../Assets/meals.jpg';
 import './Header.css';
 import HeaderCartButton from './HeaderCartButton';
 
-function Header() {
+function Header({ onShowCart }) {
 	return (
 		<>
 			<header className='header'>
 				<h1>ReactMeals</h1>
-				<HeaderCartButton />
+				<HeaderCartButton onClick={onShowCart} />
 			</header>
 			<div className='main-image'>
 				<img
