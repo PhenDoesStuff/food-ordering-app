@@ -25,7 +25,7 @@ const MealItemForm = ({ id, onAddToCart }) => {
 	};
 
 	return (
-		<form className='form'>
+		<form className='form' onSubmit={submitHandler}>
 			<Input
 				ref={amountInputRef}
 				label='Amount'
