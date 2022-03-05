@@ -1,7 +1,12 @@
 import './App.css';
+import Header from './components/layout/Header';
 
 function App() {
-	return <h1>Place holder</h1>;
+	return (
+		<>
+			<Header />;
+		</>
+	);
 }
 
 export default App;
