@@ -21,3 +21,4 @@ const MealItem = ({ name, description, price }) => {
 };
 
 export default MealItem;
+

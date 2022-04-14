@@ -1,6 +1,6 @@
 import React from 'react';
-import CartIcon from '../Cart/CartIcon';
 import './HeaderCartButton.css';
+import CartIcon from '../cart/CartIcon';
 
 const HeaderCartButton = () => {
 	return (
@@ -15,3 +15,4 @@ const HeaderCartButton = () => {
 };
 
 export default HeaderCartButton;
+

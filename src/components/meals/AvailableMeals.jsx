@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from '../UI/Card';
 import './AvailableMeals.css';
 import MealItem from './MealItem/MealItem';
+import Card from '../ui/Card';
 
 const DUMMY_MEALS = [
 	{
@@ -50,3 +50,4 @@ const AvailableMeals = () => {
 };
 
 export default AvailableMeals;
+

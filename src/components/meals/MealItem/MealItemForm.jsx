@@ -1,6 +1,6 @@
 import React from 'react';
-import Input from '../../UI/Input';
 import './MealItemForm.css';
+import Input from '../../ui/Input';
 
 const MealItemForm = ({ id }) => {
 	return (
@@ -22,3 +22,4 @@ const MealItemForm = ({ id }) => {
 };
 
 export default MealItemForm;
+
