@@ -19,7 +19,7 @@ const cartReducer = (state, action) => {
 	return defaultCartState;
 };
 
-const CartProvider = ({ children }) => {
+const CartProvider = (props, { children }) => {
 	const [cartState, dispatchCartAction] = useReducer(cartReducer, defaultCartState);
 
 	const addItemToCartHandler = item => {
@@ -43,7 +43,7 @@ const CartProvider = ({ children }) => {
 		removeItem: removeItemFromCartHandler,
 	};
 
-	return <CartContext.Provider value={cartContext}>{children}</CartContext.Provider>;
+	return <CartContext.Provider value={cartContext}>{props.children}</CartContext.Provider>;
 };
 
 export default CartProvider;

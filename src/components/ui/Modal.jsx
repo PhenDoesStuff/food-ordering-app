@@ -9,26 +9,18 @@ const Backdrop = ({ onClose }) => {
 const ModalOverlay = props => {
 	return (
 		<div className='modal'>
-			<div className='content'>
-				{props.children}
-			</div>
+			<div className='content'>{props.children}</div>
 		</div>
 	);
 };
 
 const poratlElement = document.getElementById('overlays');
 
-const Modal = ({ children, onClose }) => {
+const Modal = (props, { onClose }) => {
 	return (
 		<>
-			{createPortal(
-				<Backdrop onClose={onClose} />,
-				poratlElement
-			)}
-			{createPortal(
-				<ModalOverlay>{children}</ModalOverlay>,
-				poratlElement
-			)}
+			{createPortal(<Backdrop onClose={onClose} />, poratlElement)}
+			{createPortal(<ModalOverlay>{props.children}</ModalOverlay>, poratlElement)}
 		</>
 	);
 };
