@@ -1,6 +1,6 @@
-import { createContext } from 'react/cjs/react.development';
+import React from 'react';
 
-const CartContext = createContext({
+const CartContext = React.createContext({
 	items: [],
 	totalAmount: 0,
 	addItem: item => {},
@@ -8,3 +8,4 @@ const CartContext = createContext({
 });
 
 export default CartContext;
+
